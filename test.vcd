@@ -1,0 +1,300 @@
+$date
+	Tue Jul 02 23:07:53 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module test $end
+$var reg 1 ! clk $end
+$scope module test_now $end
+$var wire 1 ! clk $end
+$var wire 1 " is_result_zero $end
+$var wire 1 # zy $end
+$var wire 1 $ zx $end
+$var wire 1 % we $end
+$var wire 16 & result [15:0] $end
+$var wire 1 ' ny $end
+$var wire 1 ( nx $end
+$var wire 1 ) no $end
+$var wire 1 * load $end
+$var wire 1 + is_result_neg $end
+$var wire 16 , instr_from_reg [15:0] $end
+$var wire 16 - instr_from_mem [15:0] $end
+$var wire 1 . f $end
+$var wire 16 / data_mem_out2 [15:0] $end
+$var wire 16 0 data_mem_out1 [15:0] $end
+$var wire 16 1 data_mem_mux_out [15:0] $end
+$var wire 1 2 addressing_mode $end
+$var wire 16 3 acc_out [15:0] $end
+$var wire 16 4 acc_in [15:0] $end
+$var wire 1 5 acc_control $end
+$var wire 2 6 PC_ctrl [1:0] $end
+$var wire 10 7 PC [9:0] $end
+$var reg 10 8 PCNext [9:0] $end
+$scope module acc $end
+$var wire 1 ! clk $end
+$var wire 16 9 write_data [15:0] $end
+$var wire 1 * load $end
+$var reg 16 : data [15:0] $end
+$var reg 16 ; next_data [15:0] $end
+$upscope $end
+$scope module alu_16 $end
+$var wire 16 < x [15:0] $end
+$var wire 16 = y [15:0] $end
+$var wire 1 " zr $end
+$var wire 1 # zy $end
+$var wire 1 $ zx $end
+$var wire 1 > zer $end
+$var wire 1 ' ny $end
+$var wire 1 ( nx $end
+$var wire 1 ) no $end
+$var wire 1 + ng $end
+$var wire 1 . f $end
+$var wire 6 ? ctrl_sig [5:0] $end
+$var reg 16 @ o [15:0] $end
+$upscope $end
+$scope module both_mem $end
+$var wire 1 ! clk $end
+$var wire 10 A data_address1 [9:0] $end
+$var wire 10 B data_address2 [9:0] $end
+$var wire 16 C data_out1 [15:0] $end
+$var wire 16 D data_out2 [15:0] $end
+$var wire 16 E instr_out [15:0] $end
+$var wire 16 F write_data [15:0] $end
+$var wire 10 G write_data_address [9:0] $end
+$var wire 1 % we $end
+$var wire 10 H instr_address [9:0] $end
+$upscope $end
+$scope module controller $end
+$var wire 1 % we $end
+$var wire 5 I opcode [4:0] $end
+$var wire 1 * load $end
+$var wire 16 J instr [15:0] $end
+$var wire 1 5 acc_control $end
+$var wire 2 K PC_ctrl [1:0] $end
+$var reg 1 . f $end
+$var reg 1 ) no $end
+$var reg 1 ( nx $end
+$var reg 1 ' ny $end
+$var reg 1 $ zx $end
+$var reg 1 # zy $end
+$upscope $end
+$scope module ins_reg $end
+$var wire 1 ! clk $end
+$var wire 16 L write_instr [15:0] $end
+$var reg 16 M instr [15:0] $end
+$upscope $end
+$scope module pc $end
+$var wire 10 N PCNext [9:0] $end
+$var wire 1 ! clk $end
+$var reg 10 O PC [9:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 O
+b1 N
+bx M
+b100100110010001 L
+bx K
+bx J
+bx I
+b0 H
+bx G
+b0 F
+b100100110010001 E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+x>
+bx =
+b0 <
+b0 ;
+b0 :
+bx 9
+b1 8
+b0 7
+bx 6
+x5
+bx 4
+b0 3
+x2
+bx 1
+bx 0
+bx /
+x.
+b100100110010001 -
+bx ,
+x+
+x*
+x)
+x(
+x'
+bx &
+x%
+x$
+x#
+z"
+0!
+$end
+#5000
+b10 4
+b10 9
+b10 ;
+b0 6
+b0 K
+b110010001 G
+b10 1
+b10 =
+b100110110010001 /
+b100110110010001 D
+b10 B
+0%
+05
+1*
+b10010 I
+02
+b10 0
+b10 C
+b110010001 A
+b10 8
+b10 N
+b11010110010010 -
+b11010110010010 E
+b11010110010010 L
+b1 7
+b1 H
+b1 O
+b100100110010001 ,
+b100100110010001 J
+b100100110010001 M
+1!
+#10000
+0!
+#15000
+0+
+b110 ;
+0>
+b110 &
+b110 @
+b110 4
+b110 9
+0$
+0(
+0#
+0'
+1.
+b10 ?
+0)
+b110010010 G
+b100 1
+b100 =
+bx /
+bx D
+b100 B
+15
+b1101 I
+b100 0
+b100 C
+b110010010 A
+b11 8
+b11 N
+b10 3
+b10 :
+b10 <
+b10 F
+b11010110010010 ,
+b11010110010010 J
+b11010110010010 M
+b100110110010001 -
+b100110110010001 E
+b100110110010001 L
+b10 7
+b10 H
+b10 O
+1!
+#20000
+0!
+#25000
+x+
+x$
+x(
+x#
+x'
+x.
+bx ?
+x)
+b110010001 G
+b10 1
+b10 =
+b100110110010001 /
+b100110110010001 D
+b10 B
+b10 4
+b10 9
+1%
+05
+0*
+b10011 I
+b10 0
+b10 C
+b110010001 A
+x>
+bx &
+bx @
+b100 8
+b100 N
+bx -
+bx E
+bx L
+b11 7
+b11 H
+b11 O
+b100110110010001 ,
+b100110110010001 J
+b100110110010001 M
+b110 3
+b110 :
+b110 <
+b110 F
+1!
+#30000
+0!
+#35000
+bx 6
+bx K
+bx G
+x%
+x5
+x*
+bx I
+x2
+bx A
+b101 8
+b101 N
+bx ,
+bx J
+bx M
+b100 7
+b100 H
+b100 O
+bx 4
+bx 9
+bx 1
+bx =
+bx /
+bx D
+bx B
+bx 0
+bx C
+1!
+#40000
+0!
